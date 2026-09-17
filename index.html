@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Moto X3M: Neon Rush</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Inter:wght@500;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="game-shell">
+    <header class="topbar">
+      <div class="brand"><span class="brand-mark">⚡</span><div><h1>MOTO <em>X3M</em></h1><p>NEON RUSH</p></div></div>
+      <div class="hud"><div><span>TIME</span><strong id="time">00:00.00</strong></div><div><span>SCORE</span><strong id="score">000000</strong></div><div><span>STUNTS</span><strong id="stunts">0</strong></div></div>
+      <button id="restart" class="icon-button" aria-label="Restart game">↻</button>
+    </header>
+    <section class="stage-wrap">
+      <canvas id="game" aria-label="Moto X3M game canvas"></canvas>
+      <div id="start-card" class="overlay-card"><div class="eyebrow">LEVEL 01 / 03</div><h2>NEON <span>RUSH</span></h2><p>Hit the ramps. Stick the landing.<br>Beat the clock.</p><button id="start" class="primary">RIDE OUT <b>→</b></button></div>
+      <div id="finish-card" class="overlay-card hidden"><div class="eyebrow">LEVEL COMPLETE</div><h2>RADICAL <span>RIDE</span></h2><p id="finish-message">You owned the track.</p><div class="result"><div><small>FINAL TIME</small><b id="final-time">00:00.00</b></div><div><small>SCORE</small><b id="final-score">000000</b></div></div><button id="play-again" class="primary">RIDE AGAIN <b>↻</b></button></div>
+    </section>
+    <footer class="controls"><div><kbd>←</kbd><kbd>→</kbd><span>LEAN</span></div><div><kbd>SPACE</kbd><span>BOOST / FLIP</span></div><div><kbd>R</kbd><span>RESTART</span></div><div class="tip">TIP: Land on your wheels to keep your speed!</div></footer>
+  </main>
+  <script src="game.js"></script>
+</body>
+</html>
